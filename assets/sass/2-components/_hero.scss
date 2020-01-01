@@ -1,0 +1,65 @@
+/* ------------------------------------- */
+/*	2. Hero Section
+/* ------------------------------------- */
+
+.section-hero {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-white);
+}
+
+.hero {
+    @include flexFramer;
+    @include bgimggrad(
+        var(--color-black-tr-1),
+        var(--color-black-tr-1),
+       'assets/images/blue-light-hand.png',
+    );
+
+    @media only screen and (max-width: $bp-sm) {
+        background-size: cover;
+        background-position-x: 65% !important;
+        background-repeat: no-repeat;
+        @include bgimggrad(
+            var(--color-black-tr-1),
+            var(--color-black-tr-1),
+        'assets/images/cello-body-tall.JPG',
+        );
+    }
+
+    &__title {
+        @media only screen and (max-width: $bp-sm) {
+           transform: translateY(10rem);
+        }
+    }
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        transform: translateY(12rem);
+        height: 50vh;
+
+        @media only screen and (max-width: $bp-sm) {
+           text-align: center;
+        }
+    }
+
+    &__subtitle {
+        letter-spacing: 1rem !important;
+        margin-top: 3rem;
+
+        @media only screen and (max-width: $bp-sm) {
+            width: 70%;
+            line-height: 3rem;
+
+            & span {
+                display: none;
+            }
+        }
+    }
+}

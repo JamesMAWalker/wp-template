@@ -1,0 +1,148 @@
+/* ------------------------------------- */
+/*	3. Typography
+/* ------------------------------------- */
+
+.header-1 {
+    font-family: $font-title;
+    font-weight: 100;
+    font-size: 13.5rem;
+    color: var(--color-white-tr-2);
+    letter-spacing: .5rem;
+
+    @media only screen and (max-width: $bp-med) {
+        font-size: 9rem;
+    }
+
+    @media only screen and (max-width: $bp-sm) {
+        font-size: 4rem;
+        line-height: 7rem;
+    }
+}
+
+.header-1-small {
+    font-family: $font-title;
+    font-weight: 400;
+    font-size: 3rem;
+    color: var(--color-white-tr);
+    letter-spacing: .5rem;
+    z-index: 99;
+    position: relative;
+}
+
+.header-2 {
+    font-family: $font-primary;
+    font-weight: 100;
+    font-size: 5rem;
+    color: var(--color-grey-dark-3);
+    opacity: .3;
+    letter-spacing: 1rem;
+
+    @media only screen and (max-width: $bp-med) {
+        font-size: 4.5rem;
+    }
+
+    @media only screen and (max-width: $bp-med-sm) {
+        font-size: 3.5rem;
+    }
+
+    @media only screen and (max-width: $bp-med-sm) {
+        font-size: 3rem;
+    }
+}
+
+.header-3 {
+    font-family: $font-title;
+    font-weight: 100;
+    font-size: 6rem;
+    color: var(--color-primary);
+    letter-spacing: .5rem;
+}
+
+.sub-header-1 {
+    font-size: 2.5rem;
+    letter-spacing: .5rem;
+    font-weight: 200;
+    color: var(--color-white-tr-2);
+
+    @media only screen and (max-width: $bp-med) {
+        font-size: 2rem;
+    }
+
+    @media only screen and (max-width: $bp-sm) {
+        font-size: 1.5rem;
+    }
+}
+
+.sub-header-1-dark {
+    font-size: 2.5rem;
+    letter-spacing: .25rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: var(--color-grey-dark-3);
+
+    @media only screen and (max-width: $bp-med) {
+        font-size: 2rem;
+    }
+}
+
+.sub-header-2 {
+    font-size: 1.5rem;
+    letter-spacing: .15rem;
+    font-weight: 200;
+    color: var(--color-grey-dark-3);
+}
+
+.sub-header-2-dark {
+    font-size: 1.5rem;
+    letter-spacing: .15rem;
+    font-weight: 200;
+    color: var(--color-grey-dark-2);
+}
+
+.text-1 {
+    font-size: 2rem;
+    color: var(--color-grey-dark-3);
+
+    & ~ p {
+        font-size: 1.5rem;
+        color: var(--color-grey-dark-3);
+        font-weight: 200;
+    }
+
+    @media only screen and (max-width: $bp-med-sm) {
+        font-size: 1.5rem;
+    }
+}
+
+.text-1-light {
+    font-size: 2rem;
+    color: var(--color-white);
+    letter-spacing: .5rem;
+    font-weight: 400;
+}
+
+.text-2 {
+    font-size: 1.25rem;
+    color: var(--color-white);
+    letter-spacing: .5rem;
+    font-weight: 200;
+}
+
+.text-2-tr {
+    font-size: 1.5rem;
+    color: var(--color-white-tr);
+    letter-spacing: .25rem;
+    font-weight: 200;
+
+    @media only screen and (max-width: $bp-med-sm) {
+        letter-spacing: 0;
+    }
+}
+
+.cc-logo {
+    font-family: $font-builders;
+    color: var(--color-white-tr);
+    font-size: 1.25rem;
+    letter-spacing: .25rem;
+    font-weight: bold;
+}

@@ -1,0 +1,65 @@
+/* ------------------------------------- */
+/*	3. Colors/Textures
+/* ------------------------------------- */
+
+:root {
+    --test: rgb(111, 255, 86);
+    --test-border: rgb(200, 47, 167);
+    --test-2: rgb(216, 57, 28);
+    --test-border-2: rgb(18, 0, 182);
+    --test-3: rgb(33, 255, 240);
+    --test-border-3: rgb(255, 85, 33);
+
+    // Primary Colors //
+
+    --color-primary: rgb(162, 221, 234);
+    --color-primary-tr: rgba(162, 221, 234, .35);
+    --color-primary-tr-2: rgba(162, 221, 234, .75);
+
+
+    // Greyscales //
+
+    --color-white: rgb(250, 250, 250);
+    --color-white-tr: rgba(250, 250, 250, .8);
+    --color-white-tr-2: rgba(250, 250, 250, .6);
+    --color-white-tr-3: rgba(255, 253, 253, .15);
+
+    --color-black: rgb(27, 27, 27);
+    --color-black-2: rgb(0,0,0);
+    --color-black-tr-1: rgba(0,0,0,.3);
+    --color-black-tr-2: rgba(0,0,0,.8);
+    
+    --color-grey-light-1: #faf9f9;
+    --color-grey-light-2: #f4f2f2;
+    --color-grey-light-3: #f0eeee;
+    --color-grey-light-4: #ccc;
+    
+    --color-grey-dark-1: rgb(51, 51, 51);
+    --color-grey-dark-2: rgb(58, 58, 58);
+    --color-grey-dark-2-tr: rgba(58, 58, 58, .6);
+    
+    --color-grey-dark-3: rgb(149, 149, 149);
+    --color-grey-dark-3-tr: rgba(149, 149, 149, .35);
+    --color-grey-dark-4: rgb(215, 215, 215);
+
+
+    // Shadows //
+
+    --shadow-def-primary-col: .75rem 1.5rem 1rem var(--color-primary-tr-2);
+    --shadow-def-primary-col-light: .75rem 1.5rem 1rem var(--color-primary-tr);
+    --shadow-def: .5rem 1rem 1.5rem rgba(0,0,0,.3);
+    --shadow-dark: 0 2rem 6rem rgba(0,0,0,.3);
+    --shadow-light: 0 2rem 5rem rgba(0,0,0,.06);
+    --text-shadow: 1px 5px 5px rgba(0,0,0, .5);
+
+    // Borders // 
+
+    --line-white: 1px solid var(--color-white);
+    --line-black: 1px solid var(--color-black);
+
+}
+
+// Fonts //
+
+$font-title: 'Dawning of a New Day', cursive;
+$font-primary: 'Roboto Condensed', sans-serif;

@@ -1,0 +1,147 @@
+/* ------------------------------------- */
+/*	2. Footer Section
+/* ------------------------------------- */
+
+.footer {
+    @include flexCenter;
+    background-color: var(--color-white);
+    height: 20vh;
+    width: 100%;
+
+    @media only screen and (max-width: $bp-sm) {
+        height: 50vh;
+    }
+
+    &-container {
+        @include bgimggrad(
+            var(--color-black-tr-1),
+            var(--color-black-tr-1),
+            'assets/images/bokeh-meadow.jpg'
+        );
+        height: 95%;
+        width: 97%;
+        margin-bottom: 1%;
+        border: 1px solid var(--color-grey-dark-3);
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: repeat(3, 1fr);
+
+        @media only screen and (max-width: $bp-sm) {
+            grid-template-rows: repeat(2, 1fr);
+            grid-template-columns: 1fr;
+        }
+    }
+
+    &__left {
+        position: relative;
+        grid-column: 1 / 2;
+        height: 100%;
+        width: 100%;
+        @include flexCenterCol;
+        justify-content: center;
+
+        @media only screen and (max-height: $bp-med) {
+            height: 90%;
+        }
+
+        @media only screen and (max-width: $bp-sm) {
+            grid-column: 1 / 2;
+            grid-row: 2 / 3;
+        }
+    }
+
+    &__social {
+
+        &-links {
+            @include flexCenter;
+            width: 100%;
+            justify-content: space-evenly;
+            justify-self: center;
+            align-self: center;
+        }
+
+        &-icon {
+            height: 2.5rem;
+            width: 2.5rem;
+            opacity: .85;
+            transition: all .2s;
+
+            &:hover {
+                transform: scale(1.075);
+                opacity: 1;
+            }
+
+            @media only screen and (max-height: $bp-med) {
+                height: 1.75rem;
+                width: 1.75rem;
+            }
+        }
+
+        &-built {
+            @include flexCenter;
+            position: absolute;
+            bottom: .5rem;
+            width: 100%;
+            margin: 1% 0;
+            justify-self: center;
+            align-self: center;
+
+            @media only screen and (max-width: $bp-med-sm) {
+                flex-direction: column;
+            }
+        }
+    }
+
+    &__center {
+        @include flexCenterCol;
+        @include bggrad(
+            var(--color-white-tr-3),
+            var(--color-white-tr-3)
+        );
+        grid-column: 2 / 3;
+        height: 100%;
+        width: 100%;
+
+        @media only screen and (max-width: $bp-sm) {
+            grid-column: 1 / 2;
+            grid-row: 1 / 2;
+        }
+
+        &-name {
+            @include flexCenterCol;
+        }
+
+        &-info {
+            @include flexCenterCol;
+            width: 85%;
+            
+            & > * {
+                margin-top: .75rem;
+            }
+        }
+
+    }
+
+    &__right {
+        @include flexCenter;
+        grid-column: 3 / 4;
+        transition: all .2s;
+        height: 100%;
+        width: 100%;
+        cursor: pointer;
+
+        @media only screen and (max-width: $bp-sm) {
+            grid-column: 1 / 2;
+            grid-row: 3 / 4;
+            display: none;
+        }
+
+        &:hover {
+            background-color: var(--color-primary-tr);
+        }
+
+        &-totop {
+            @include flexCenter;
+        }
+    }
+}
